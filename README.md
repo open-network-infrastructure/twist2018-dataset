@@ -28,6 +28,12 @@ To decide whether a gateway is online, verify the difference of `measured_at - l
 *Note:*
 Somethimes `last_online` is greater than `measured_at`, this has to do with the fact that the values get actually stored in the database after `measured_at` and sometimes even a newer `last_online` is available.
 
+### Related datasets
+
+* **TTN Mapper data dumps** (crowd-sourced network coverage measurements): https://ttnmapper.org/dumps/ 
+* **Live data of the NOC API**: http://noc.thethingsnetwork.org:8085/api/v2/gateways/eui-[x]  (replace `[x]` with gateway EUI)
+* **Ownership data** on https://github.com/ttn-zh/gateway-remote-config/
+
 ## Credit
 
 Data part of ongoing research, provided by Benedikt Hitz-Gamper, Institute of Information Systems, University of Bern, benedikt.hitz@iwi.unibe.ch
