@@ -37,3 +37,9 @@ Somethimes `last_online` is greater than `measured_at`, this has to do with the 
 ## Credit
 
 Data part of ongoing research, provided by Benedikt Hitz-Gamper, Institute of Information Systems, University of Bern, benedikt.hitz@iwi.unibe.ch
+
+## License
+
+The content in this repository is licensed under the CC-BY-SA 4.0 License (see the [LICENSE](LICENSE) file for details) unless stated otherwise.
+
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
