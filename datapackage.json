@@ -9,7 +9,7 @@
          "bytes":40091,
          "encoding":"utf-8",
          "format":"geojson",
-         "title":"Gateways as GeoJSON",
+         "title":"Gateways map",
          "mediatype":"application/json",
          "name":"ttn_gateways_geojson",
          "path":"ttn_gateways.geojson",
@@ -20,7 +20,7 @@
         "path": "ttn_gateways.csv",
         "profile": "tabular-data-resource",
         "name": "ttn_gateways",
-        "title":"Gateways as CSV",
+        "title":"Gateways data",
         "format": "csv",
         "mediatype": "text/csv",
         "encoding": "utf-8",
@@ -58,7 +58,7 @@
             },
             {
               "name": "altitude",
-              "type": "integer",
+              "type": "number",
               "format": "default"
             },
             {
@@ -73,11 +73,11 @@
         }
       },
       {
-        "bytes": 50154119,
-        "path": "ttn_measurements.csv",
+        "bytes": 6246,
+        "path": "ttn_measurements.preview.csv",
         "profile": "tabular-data-resource",
-        "name": "ttn_measurements",
-        "title":"Sample measurements",
+        "name": "ttn_measurements_preview",
+        "title":"Sample data (preview)",
         "format": "csv",
         "mediatype": "text/csv",
         "encoding": "utf-8",
@@ -100,12 +100,12 @@
             },
             {
               "name": "rx_ok",
-              "type": "integer",
+              "type": "number",
               "format": "default"
             },
             {
               "name": "tx_in",
-              "type": "integer",
+              "type": "number",
               "format": "default"
             },
             {
@@ -118,6 +118,14 @@
             "NA"
           ]
         }
+      },
+      {
+        "bytes": 8609623,
+        "path": "ttn_measurements.csv.zip",
+        "name": "ttn_measurements",
+        "title":"Sample data (compressed)",
+        "format": "zip",
+        "mediatype": "application/zip"
       }
    ],
    "views":[
