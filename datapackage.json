@@ -10,7 +10,7 @@
          "encoding":"utf-8",
          "format":"geojson",
          "mediatype":"application/json",
-         "name":"ttn_gateways",
+         "name":"ttn_gateways_geojson",
          "path":"ttn_gateways.geojson",
          "profile":"data-resource"
       },
@@ -65,7 +65,7 @@
             }
           ],
           "missingValues": [
-            ""
+            "NA"
           ]
         }
       },
@@ -110,7 +110,7 @@
             }
           ],
           "missingValues": [
-            ""
+            "NA"
           ]
         }
       }
