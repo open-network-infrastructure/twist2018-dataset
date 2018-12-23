@@ -1,5 +1,3 @@
-# ttn-twist2018-dataset
-
 Data from [The Things Network](https://thethingsnetwork.org) (TTN) gateways in Zürich, collected as part of ongoing research and originally provided by [Benedikt Hitz-Gamper](http://www.digitale-nachhaltigkeit.unibe.ch/about_us/persons/hitz_gamper_benedikt/index_eng.html) (Institute of Information Systems, University of Bern) for the [TWIST 2018](https://hack.twist2018.ch) hackathon.
 
 Originally uploaded by @gnz and reformatted as [Geospatial](https://frictionlessdata.io/docs/publish-geo/) [Data Package](https://frictionlessdata.io/specs/) by @loleg

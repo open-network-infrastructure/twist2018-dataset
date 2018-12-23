@@ -9,15 +9,18 @@
          "bytes":40091,
          "encoding":"utf-8",
          "format":"geojson",
+         "title":"Gateways as GeoJSON",
          "mediatype":"application/json",
          "name":"ttn_gateways_geojson",
          "path":"ttn_gateways.geojson",
          "profile":"data-resource"
       },
       {
+        "bytes": 12136,
         "path": "ttn_gateways.csv",
         "profile": "tabular-data-resource",
         "name": "ttn_gateways",
+        "title":"Gateways as CSV",
         "format": "csv",
         "mediatype": "text/csv",
         "encoding": "utf-8",
@@ -70,9 +73,11 @@
         }
       },
       {
+        "bytes": 50154119,
         "path": "ttn_measurements.csv",
         "profile": "tabular-data-resource",
         "name": "ttn_measurements",
+        "title":"Sample measurements",
         "format": "csv",
         "mediatype": "text/csv",
         "encoding": "utf-8",
