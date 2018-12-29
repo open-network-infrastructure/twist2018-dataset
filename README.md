@@ -1,13 +1,13 @@
-# twist2018-dataset
+[![DataHub packaged badge](https://img.shields.io/badge/DataHub-packaged-orange.svg)](https://datahub.io/loleg/ttn-twist2018-dataset)
 
-> Data part of ongoing research, provided by Benedikt Hitz-Gamper, Institute of Information Systems, University of Bern, benedikt.hitz@iwi.unibe.ch
+Data from [The Things Network](https://thethingsnetwork.org) (TTN) gateways in Zürich, collected as part of ongoing research and originally provided by [Benedikt Hitz-Gamper](http://www.digitale-nachhaltigkeit.unibe.ch/about_us/persons/hitz_gamper_benedikt/index_eng.html) (Institute of Information Systems, University of Bern) for the [TWIST 2018](https://hack.twist2018.ch/project/14) hackathon. Uploaded by @gnz and reformatted by @loleg as [Geospatial](https://frictionlessdata.io/docs/publish-geo/) [Data Package](https://frictionlessdata.io/specs/) for publication at [DataHub.io](https://datahub.io/loleg/ttn-twist2018-dataset)
 
 ## Data files
 
 ### File `ttn_gateways.csv` (134 rows)
 
 * `device_id`: unique key for device_id in table `ttn_measurements` (this is an internal key, not connected with TTN IDs)
-* `eui_id`: id used by TTN to uniquely identify gateways 
+* `eui_id`: id used by TTN to uniquely identify gateways
 * `platform`: make/model of gateway if provided
 * `category`: clustered value for `platform`
 * `lat`/`lng`: location of gateway if provided
@@ -15,6 +15,8 @@
 * `ETH_dist`: distance from gateway to ETH main building (selection criteria for gateways is < 20km)
 
 ### File `ttn_measurements.csv` (750926 rows)
+
+_(Distributed as ZIP-compressed file, with `.preview` file available)_
 
 * `id`: unique id
 * `device_id`: key for `device_id` in table `ttn_gateways`
@@ -30,7 +32,7 @@ Somethimes `last_online` is greater than `measured_at`, this has to do with the 
 
 ### Related datasets
 
-* **TTN Mapper data dumps** (crowd-sourced network coverage measurements): https://ttnmapper.org/dumps/ 
+* **TTN Mapper data dumps** (crowd-sourced network coverage measurements): https://ttnmapper.org/dumps/
 * **Live data of the NOC API**: http://noc.thethingsnetwork.org:8085/api/v2/gateways/eui-[x]  (replace `[x]` with gateway EUI)
 * **Ownership data** on https://github.com/ttn-zh/gateway-remote-config/
 

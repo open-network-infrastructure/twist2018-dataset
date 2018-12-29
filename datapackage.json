@@ -1,0 +1,134 @@
+{
+   "name":"ttn-twist2018-dataset",
+   "title":"TTN TWIST2018 Dataset",
+   "version":"0.1.0",
+   "profile":"data-package",
+   "readme":"Data from The Things Network (TTN) gateways in Zürich, collected as part of ongoing research and originally provided by Benedikt Hitz-Gamper (Institute of Information Systems, University of Bern) for the TWIST 2018  hackathon.",
+   "resources":[
+      {
+         "bytes":40091,
+         "encoding":"utf-8",
+         "format":"geojson",
+         "title":"Gateways map",
+         "mediatype":"application/json",
+         "name":"ttn_gateways_geojson",
+         "path":"ttn_gateways.geojson",
+         "profile":"data-resource"
+      },
+      {
+        "bytes": 12136,
+        "path": "ttn_gateways.csv",
+        "profile": "tabular-data-resource",
+        "name": "ttn_gateways",
+        "title":"Gateways data",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8",
+        "schema": {
+          "fields": [
+            {
+              "name": "device_id",
+              "type": "integer",
+              "format": "default"
+            },
+            {
+              "name": "eui_id",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "platform",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "category",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "lat",
+              "type": "number",
+              "format": "default"
+            },
+            {
+              "name": "lng",
+              "type": "number",
+              "format": "default"
+            },
+            {
+              "name": "altitude",
+              "type": "number",
+              "format": "default"
+            },
+            {
+              "name": "ETH_dist",
+              "type": "number",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            "NA", ""
+          ]
+        }
+      },
+      {
+        "bytes": 6246,
+        "path": "ttn_measurements.preview.csv",
+        "profile": "tabular-data-resource",
+        "name": "ttn_measurements_preview",
+        "title":"Sample data (preview)",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8",
+        "schema": {
+          "fields": [
+            {
+              "name": "id",
+              "type": "integer",
+              "format": "default"
+            },
+            {
+              "name": "device_id",
+              "type": "integer",
+              "format": "default"
+            },
+            {
+              "name": "last_online",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "rx_ok",
+              "type": "number",
+              "format": "default"
+            },
+            {
+              "name": "tx_in",
+              "type": "number",
+              "format": "default"
+            },
+            {
+              "name": "measured_at",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            "NA"
+          ]
+        }
+      },
+      {
+        "bytes": 8609623,
+        "path": "ttn_measurements.csv.zip",
+        "name": "ttn_measurements",
+        "title":"Sample data (compressed)",
+        "format": "zip",
+        "mediatype": "application/zip"
+      }
+   ],
+   "views":[
+
+   ]
+}
